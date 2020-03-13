@@ -1,0 +1,24 @@
+AT first ,I read the image three times, as further processes will modify the original image.
+Then I create a HSV slider to get the HSV range of the raw material of chips so that I can mask it therefore getting the chips region with black background so as to draw the contours perfectly.
+I get the image and name it as "white".
+Now , I apply Median Blurr followed by erosion and dilation to get the perfect seperated conours of the closer chips.
+Now ,I find contours for the dilated binary image and draw this contours in the original image. This is shown in "cntr" frame.
+I print the length of cntr and as expected it comes out to be 24.
+Now using the for loop, I find the individual picture of every image....that is my region of intrest.
+The following operations are performed individually over each roi:
+I do the similar things..ie. take the range,mask it,perform bitwise_and to get only red area, get the contours and draw it on the only red area image
+I had defined two list earlier at the top.I store the area of the chips in areaChips and the red area in areachipsRed. 
+I find the similar set of operations under the for loop for any other traces of colour as well,preferably brown and green color.
+Now since I know the length of the contours for red colour I  again apply a for loop to sum all these areas scattered of the red colour region.REMEMBER we are doing all this for individual images of the chips.
+I check for the threshold value of the red that is 0.68 and as well as for any other traces of color found.
+Those chips which are rejected I print them with "***"
+Finally, I print the final result.
+
+The frames I am displaying are: originalImage, cntr(showing cntr of chips),orang( showing the red-brown area) & final result.
+RESULTS:
+
+IMAGES REJECTED ARE= (1,6) combined.. ,3,14,17,18,19,20,23,24
+
+
+Problems faced:
+I was not able to find the perfect range of red color and green color. Doing the slight changes in the range will lead to changing of answers. So I took help of online sites like colorizer to find the approximate range of the red and green-brown colour.
