@@ -18,10 +18,10 @@ Project maintainers:
 
 ## Screenshots
 
-Screenshots are not in the order of the workflow, please visit the hosted live website to check out the project.
+This is how a sample output looks like as of now - 
 
 ![](/images/sample.png)
 
 ## Contributing
 
-We'd love to have contributors! If you're interested in contributing, take a look at our [CONTRIBUTING.md](./CONTRIBUTING.md)
+We'd love to have contributors and especially, encourage the contributions by newbies! If you're interested in contributing, take a look at our [CONTRIBUTING.md](./CONTRIBUTING.md)
