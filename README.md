@@ -20,7 +20,7 @@ Project maintainers:
 
 This is how a sample output looks like as of now - 
 
-![](/images/sample.png)
+![](/images/output.png)
 
 ## Contributing
 
